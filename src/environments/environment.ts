@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  URL: 'https://app-ng-mean.herokuapp.com/api'
+  URL: 'http://localhost:3000/api'
 };
 
 /*
