@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 import { Consulta } from '../models/consulta'
 
 @Injectable({
@@ -11,9 +11,9 @@ export class ConsultaService {
 
   //URL: string = 'http://localhost:3000/'
 
-  URL: string = 'https://app-ng-mean.herokuapp.com/api'
+  //URL: string = 'https://app-ng-mean.herokuapp.com/api'
 
-  //URL = environment.URL
+  URL = environment.URL
 
   constructor(private http: HttpClient) { }
 
